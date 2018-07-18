@@ -1,0 +1,12 @@
+<?php
+
+$a = '1';
+$b = &$a;
+$b = "2$b";
+echo $a . ", ".$b;
+
+?>
+
+Answer is 21, 21
+
+Beacuse we have passed the value of reference to b using the "&"

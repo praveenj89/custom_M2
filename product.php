@@ -1,3 +1,8 @@
+
+<form name="cart" method="post" action="">
+<input type="text" placeholder="Enter the products for e.g ABCDABAA" value="" name="products"/><input type="submit" value="submit" name="submit"/>
+</form>
+
 <?php
    if(isset($_POST) && !empty($_POST['products'])) {
      
@@ -29,6 +34,3 @@
     echo 'Final Total: $' . number_format($total, 2). "<bR>"; 
    }
 ?>
-<form name="cart" method="post" action="">
-<input type="text" placeholder="Enter the products for e.g ABCDABAA" value="" name="products"/><input type="submit" value="submit" name="submit"/>
-</form>
